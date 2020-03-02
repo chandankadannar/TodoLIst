@@ -20,7 +20,7 @@ class users extends Component {
           >
             Create User
           </Button>
-        ) : this.props.buttontype === "todo" ? (
+        ) : this.props.buttontype === "todos" ? (
           <Button
             style={{
               margin: "1em"
