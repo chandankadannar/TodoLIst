@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      step: 1,
+      step: 2,
       visible: false,
       name: "",
       email: "",

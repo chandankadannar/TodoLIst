@@ -6,6 +6,9 @@ import Createbutton from "./button";
 class todo extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      type: "todo"
+    };
   }
 
   render() {
@@ -30,6 +33,7 @@ class todo extends Component {
           items={this.props.items}
           delete={this.props.delete}
           edit={this.props.edit}
+          type={this.state.type}
         />
       </div>
     );
