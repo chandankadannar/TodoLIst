@@ -7,7 +7,8 @@ class todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: "todo"
+      type: "todo",
+      buttontype: "todo"
     };
   }
 
@@ -27,6 +28,7 @@ class todo extends Component {
           visible={this.props.visible}
           confirmLoading={this.props.confirmLoading}
           handleCancel={this.props.handleCancel}
+          buttontype={this.state.buttontype}
         />
 
         <Datatable

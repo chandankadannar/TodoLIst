@@ -11,14 +11,25 @@ class users extends Component {
     const { visible, confirmLoading } = this.props;
     return (
       <div>
-        <Button
-          style={{
-            margin: "1em"
-          }}
-          onClick={() => this.props.showModal()}
-        >
-          Create User
-        </Button>
+        {this.props.buttontype === "users" ? (
+          <Button
+            style={{
+              margin: "1em"
+            }}
+            onClick={() => this.props.showModal()}
+          >
+            Create User
+          </Button>
+        ) : this.props.buttontype === "todo" ? (
+          <Button
+            style={{
+              margin: "1em"
+            }}
+            onClick={() => this.props.showModal()}
+          >
+            Create Todo
+          </Button>
+        ) : null}
         <Modal
           title="Basic Modal"
           visible={this.props.visible}
