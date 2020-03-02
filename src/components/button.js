@@ -20,14 +20,14 @@ class users extends Component {
           >
             Create User
           </Button>
-        ) : this.props.buttontype === "todos" ? (
+        ) : this.props.buttontype === "todo" ? (
           <Button
             style={{
               margin: "1em"
             }}
             onClick={() => this.props.showModal()}
           >
-            Create Todo
+            Create Todos
           </Button>
         ) : null}
         <Modal
