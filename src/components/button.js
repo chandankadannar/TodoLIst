@@ -27,7 +27,7 @@ class users extends Component {
             }}
             onClick={() => this.props.showModal()}
           >
-            Create Todos
+            Create Todo
           </Button>
         ) : null}
         <Modal
