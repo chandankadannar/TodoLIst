@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Modal, Button, Input } from "antd";
 import { Table, Divider, Tag } from "antd";
+import moment from "moment";
 
 class table extends Component {
   constructor(props) {
@@ -54,7 +55,9 @@ class table extends Component {
             <Column
               title="Date"
               key="key"
-              render={(text, record) => record.key.substring(0, 10)}
+              render={(text, record) =>
+                moment(record.key).format("DD-MM-YYYY, hh:mm:ss A")
+              }
             />
           </Table>
         ) : null}
